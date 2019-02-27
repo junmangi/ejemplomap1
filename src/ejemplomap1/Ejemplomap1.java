@@ -5,7 +5,7 @@
  */
 package ejemplomap1;
 
-import com.sun.security.ntlm.Client;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -29,16 +29,18 @@ public class Ejemplomap1 {
         LinkedList<Cliente>listac2=new LinkedList<>();
         
         Map<Integer, LinkedList<Cliente>> map1=new HashMap<>();
-         Map<Integer, LinkedList<Cliente>> map2=new HashMap<>();
+        
+         
         listac.add(new Cliente("david", "li30", "uao"));
         listac.add(new Cliente("carmen", "li5", "ice"));
         listac.add(new Cliente("marcela", "fd4", "ced"));
         
-       map1.put(5,listac);
+       map1.put(3,listac);
+       
         listac2.add(new Cliente("david", "li30", "uao"));
         listac2.add(new Cliente("carmen", "li5", "ice"));
         listac2.add(new Cliente("marcela", "fd4", "ced"));
-        map1.put(5,listac2);
+        map1.put(36,listac2);
         
 //        Map<Integer,Cliente> map2=new LinkedHashMap<>();
 //        Map<Integer,Cliente> map3=new TreeMap<>();
@@ -57,12 +59,12 @@ public class Ejemplomap1 {
 //            map3.put(14,new Cliente("lorena", "gh5", "nabes"));
 //            
 //            
-//        String m1=mostrarDatos(map1);
+       String m1=mostrarDatos(map1);
 //        String m2=mostrarDatos(map2);
 //        String m3=mostrarDatos(map3);
 //        
 //        
-//        System.out.println(m1);
+       System.out.println(m1);
 //        
 //        System.out.println("-------------------");
 //         System.out.println(m2);
@@ -74,12 +76,15 @@ public class Ejemplomap1 {
     }
     public static String mostrarDatos(Map<Integer,LinkedList<Cliente>>m){
         String mostrar = "";
-        Iterator<Map.Entry<Integer,LinkedList<Cliente>>> it= m.entrySet().iterator();
+        
+        Iterator<Map.Entry<Integer,LinkedList<Cliente>>> it;
+         it = m.entrySet().iterator();
         while (it.hasNext()) {
+            
           Map.Entry<Integer,LinkedList<Cliente>> pair=it.next();
           mostrar+=pair.getKey()+"\n";
             
-            for(int i=0;i<pair.getValue().size();i++){
+            for(int i=0; i<pair.getValue().size(); i++){
                 
             mostrar+=pair.getValue().get(i)+"\n";
             
