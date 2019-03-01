@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+  <key id="3" />
+  <cleinte nombre="david" idCliente="li30" Empresa="uao" />
+  <cleinte nombre="carmen" idCliente="li5" Empresa="ice" />
+  <cleinte nombre="marcela" idCliente="fd4" Empresa="ced" />
+  <key id="36" />
+  <cleinte nombre="david" idCliente="li30" Empresa="uao" />
+  <cleinte nombre="carmen" idCliente="li5" Empresa="ice" />
+  <cleinte nombre="marcela" idCliente="fd4" Empresa="ced" />
+</clientes>

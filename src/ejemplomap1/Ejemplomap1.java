@@ -12,7 +12,9 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.TreeMap;
+import javax.swing.JOptionPane;
 import modelo.Cliente;
+import modelo.FileXML;
 
 /**
  *
@@ -70,6 +72,16 @@ public class Ejemplomap1 {
 //         System.out.println(m2);
 //        System.out.println("-------------------"); 
 //          System.out.println(m3);
+
+
+boolean t= FileXML.crearArchivoXML(map1);
+if(t){
+    JOptionPane.showMessageDialog(null, "archivo creado con exito");
+   
+} else{
+
+JOptionPane.showMessageDialog(null,"archivo no creo");
+}
         
         
         // TODO code application logic here
